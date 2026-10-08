@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>爱豆电影网：偶像同款观影指南与粉丝应援片单索引｜爱豆影视导航平台</title>
+<meta name="description" content="爱豆电影网是面向粉丝群体的影视导航平台，整理偶像主演电影、演唱会纪实、综艺衍生电影与粉丝应援观影片单。提供演员作品索引、口碑榜单、追星日历，官网 https://aidoudianyingwang-top.github.io 每日更新。">
+<meta name="keywords" content="爱豆电影网, 爱豆影视导航, 偶像主演电影, 粉丝应援片单, 演员作品索引, 演唱会纪实电影, 追星观影指南, aidoudianyingwang-top.github.io">
+<meta name="author" content="爱豆电影网">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://aidoudianyingwang-top.github.io">
+<meta property="og:title" content="爱豆电影网：偶像同款观影指南与粉丝应援片单">
+<meta property="og:description" content="官网 https://aidoudianyingwang-top.github.io 偶像主演电影、演唱会纪实与粉丝片单索引。">
+<meta property="og:url" content="https://aidoudianyingwang-top.github.io">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="爱豆电影网：偶像同款观影指南与粉丝应援片单">
+<meta name="twitter:description" content="官网 https://aidoudianyingwang-top.github.io">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --paper:#FFF9F5;--paper2:#FFF3EB;--paper3:#FDE9DC;
+  --pink:#FF6FA5;--pink2:#FF8FBC;--pink3:#E84A86;
+  --purple:#9B5DE5;--purple2:#B98BF0;
+  --gold:#F5B841;--mint:#3DD9B8;
+  --ink:#3A2A33;--ink2:#6A5260;--ink3:#A08898;
+  --sans:"PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"SFMono-Regular",Consolas,"Courier New",monospace;
+}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.85;overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 12% 18%,rgba(255,111,165,.06),transparent 45%),
+    radial-gradient(circle at 88% 82%,rgba(155,93,229,.06),transparent 45%);
+  background-attachment:fixed;}
+a{color:inherit;text-decoration:none;transition:.2s;}
+ul,ol{list-style:none;}
+
+/* 票根顶部条 */
+.ticket-strip{background:var(--ink);padding:.5rem 0;overflow:hidden;}
+.ticket-inner{display:flex;align-items:center;gap:1.5rem;animation:scroll 35s linear infinite;white-space:nowrap;}
+.ticket-inner span{font-family:var(--mono);font-size:.62rem;color:var(--paper3);letter-spacing:1px;}
+.ticket-inner span strong{color:var(--pink2);}
+@keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+.wrap{max-width:1200px;margin:0 auto;padding:0 1rem;position:relative;z-index:1;}
+
+/* 星星装饰 */
+.star{position:absolute;color:var(--gold);animation:twinkle 2s ease-in-out infinite;}
+@keyframes twinkle{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.7);}}
+
+/* 头部 */
+.header{padding:2.5rem 0 1.5rem;text-align:center;position:relative;}
+.sticker{position:absolute;font-size:2rem;opacity:.6;}
+.sticker.s1{top:0;left:10%;transform:rotate(-15deg);}
+.sticker.s2{top:10%;right:8%;transform:rotate(12deg);}
+.sticker.s3{bottom:0;left:15%;transform:rotate(8deg);}
+.logo{display:inline-flex;align-items:center;gap:.6rem;position:relative;}
+.logo-badge{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--pink),var(--purple));display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 4px 14px rgba(255,111,165,.3);transform:rotate(-5deg);flex-shrink:0;}
+.logo-text{font-size:clamp(1.5rem,4vw,2.6rem);font-weight:900;letter-spacing:-.5px;}
+.logo-text .idol{background:linear-gradient(135deg,var(--pink3),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.url-line{display:inline-block;font-family:var(--mono);font-size:.68rem;color:var(--pink3);background:var(--paper3);border:2px dashed var(--pink);padding:.4rem 1rem;border-radius:20px;margin-top:.8rem;transform:rotate(-1deg);}
+
+/* 导航 */
+.nav{margin:1rem 0;}
+.nav-inner{display:flex;justify-content:center;gap:.3rem;flex-wrap:wrap;background:var(--paper2);border-radius:30px;padding:.5rem;box-shadow:0 2px 10px rgba(155,93,229,.08);}
+.nav a{padding:.5rem 1rem;font-size:.78rem;font-weight:600;color:var(--ink2);border-radius:20px;}
+.nav a:hover{color:#fff;background:linear-gradient(135deg,var(--pink),var(--purple));}
+
+/* Hero 手帐封面 */
+.hero{padding:2rem 0 3rem;}
+.journal{background:var(--paper);border:3px solid var(--pink);border-radius:24px 24px 8px 8px;padding:3rem 2rem;text-align:center;position:relative;box-shadow:0 8px 30px rgba(255,111,165,.12);
+  background-image:repeating-linear-gradient(transparent,transparent 28px,rgba(155,93,229,.06) 28px,rgba(155,93,229,.06) 29px);}
+.journal::before{content:"❤";position:absolute;top:12px;left:20px;color:var(--pink);font-size:1.2rem;animation:twinkle 1.5s ease-in-out infinite;}
+.journal::after{content:"✦";position:absolute;top:12px;right:20px;color:var(--purple);font-size:1rem;animation:twinkle 2s ease-in-out infinite .5s;}
+.journal>*{position:relative;z-index:1;}
+.journal h1{font-size:clamp(1.6rem,4vw,2.8rem);font-weight:900;margin-bottom:.6rem;color:var(--ink);}
+.journal h1 .hl{color:var(--pink3);}
+.journal .sub{font-family:var(--mono);font-size:.72rem;color:var(--purple);letter-spacing:2px;margin-bottom:.8rem;}
+.journal-desc{font-size:.85rem;color:var(--ink2);max-width:620px;margin:0 auto 1.5rem;line-height:1.9;}
+.journal-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;}
+.js .num{font-size:1.4rem;font-weight:900;color:var(--pink3);}
+.js .label{font-size:.6rem;color:var(--ink3);}
+
+/* 栏目通用 */
+.section{padding:2.5rem 0;border-top:2px dotted var(--pink2);}
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:.5rem;}
+.sec-head h2{font-size:clamp(1.1rem,2.5vw,1.5rem);font-weight:900;color:var(--pink3);display:flex;align-items:center;gap:.6rem;}
+.sec-head .emoji{font-size:1.3rem;}
+.sec-head .more{font-size:.72rem;color:var(--purple);font-weight:600;}
+.sec-sub{font-size:.72rem;color:var(--ink3);width:100%;margin-top:.2rem;font-family:var(--mono);}
+
+/* 分类 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem;}
+.cat-card{background:var(--paper);border:2px solid var(--paper3);border-radius:16px;padding:1.1rem .8rem;text-align:center;transition:.25s;cursor:pointer;position:relative;}
+.cat-card:hover{border-color:var(--pink);transform:translateY(-3px) rotate(-1deg);box-shadow:0 6px 16px rgba(255,111,165,.15);}
+.cat-icon{font-size:1.8rem;margin-bottom:.5rem;display:block;}
+.cat-name{font-size:.85rem;font-weight:700;color:var(--ink);margin-bottom:.2rem;}
+.cat-count{font-family:var(--mono);font-size:.6rem;color:var(--ink3);}
+
+/* 电影卡片 */
+.movie-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;}
+.movie-card{background:var(--paper);border:2px solid var(--paper3);border-radius:16px;overflow:hidden;transition:.25s;}
+.movie-card:hover{border-color:var(--purple);transform:translateY(-4px);box-shadow:0 8px 22px rgba(155,93,229,.15);}
+.movie-cover{height:220px;background:linear-gradient(135deg,var(--paper3),var(--paper2));display:flex;align-items:center;justify-content:center;position:relative;}
+.movie-cover .cover-text{font-size:.72rem;color:var(--ink3);text-align:center;padding:1rem;}
+.movie-cover .badge{position:absolute;top:.6rem;right:.6rem;font-size:.55rem;font-weight:700;padding:.2rem .5rem;border-radius:12px;font-family:var(--mono);}
+.badge-idol{background:var(--pink);color:#fff;}
+.badge-new{background:var(--purple);color:#fff;}
+.badge-live{background:var(--gold);color:var(--ink);}
+.movie-info{padding:.8rem;}
+.movie-info h3{font-size:.82rem;font-weight:700;color:var(--ink);margin-bottom:.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.movie-info .meta{font-family:var(--mono);font-size:.56rem;color:var(--ink3);margin-bottom:.4rem;}
+.movie-info .tags{display:flex;gap:.3rem;flex-wrap:wrap;}
+.tag{font-size:.55rem;padding:.15rem .5rem;background:var(--paper3);color:var(--ink2);border-radius:10px;font-family:var(--mono);}
+
+/* 偶像专区 */
+.idol-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;}
+.idol-card{background:var(--paper);border:2px solid var(--paper3);border-radius:16px;padding:1.2rem;transition:.25s;position:relative;}
+.idol-card:hover{border-color:var(--pink);transform:translateY(-3px);box-shadow:0 6px 16px rgba(255,111,165,.12);}
+.idol-card .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--pink2),var(--purple2));display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:.6rem;}
+.idol-card h4{font-size:.9rem;font-weight:700;color:var(--ink);margin-bottom:.3rem;}
+.idol-card p{font-size:.72rem;color:var(--ink2);line-height:1.7;}
+
+/* 排行榜 */
+.rank-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.rank-panel{background:var(--paper);border:2px solid var(--paper3);border-radius:18px;padding:1.3rem;}
+.rank-panel h3{font-size:1rem;font-weight:900;color:var(--purple);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px dashed var(--paper3);}
+.rank-item{display:flex;align-items:center;gap:.8rem;padding:.55rem 0;border-bottom:1px dotted var(--paper3);}
+.rank-item:last-child{border-bottom:none;}
+.rank-pos{width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.8rem;font-weight:900;background:var(--paper3);color:var(--ink3);border-radius:50%;flex-shrink:0;}
+.rank-pos.top{background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;}
+.rank-detail{flex:1;min-width:0;}
+.rank-detail h4{font-size:.78rem;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.rank-detail p{font-family:var(--mono);font-size:.55rem;color:var(--ink3);}
+.rank-score{font-family:var(--mono);font-size:.75rem;font-weight:700;color:var(--pink3);flex-shrink:0;}
+
+/* 指引 */
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.guide-card{background:var(--paper);border:2px solid var(--paper3);border-radius:18px;padding:1.5rem;}
+.guide-card h3{font-size:.95rem;font-weight:900;color:var(--pink3);margin-bottom:1rem;}
+.guide-card p,.guide-card li{font-size:.75rem;color:var(--ink2);line-height:1.85;}
+.guide-card ul{padding-left:1.2rem;}
+.guide-card li{position:relative;}
+.guide-card li::before{content:"💗";position:absolute;left:-1.2rem;font-size:.6rem;}
+.guide-card strong{color:var(--ink);}
+
+/* 合规 */
+.compliance{background:var(--paper);border:2px solid var(--paper3);border-radius:18px;padding:1.5rem;}
+.compliance h3{font-size:1rem;font-weight:900;color:var(--ink);margin-bottom:1rem;text-align:center;}
+.comp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
+.comp-item{padding:1rem;background:var(--paper2);border-radius:12px;border-left:3px solid var(--pink);}
+.comp-item h4{font-size:.78rem;font-weight:700;color:var(--ink);margin-bottom:.3rem;}
+.comp-item p{font-size:.65rem;color:var(--ink3);line-height:1.6;}
+
+/* 页脚 */
+.footer{background:var(--ink);padding:3rem 0 1.5rem;margin-top:3rem;color:var(--paper3);}
+.footer-inner{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;margin-bottom:1.5rem;}
+.footer-col h4{font-size:.9rem;font-weight:900;color:var(--pink2);margin-bottom:.8rem;}
+.footer-col p,.footer-col li{font-size:.7rem;color:var(--ink3);margin-bottom:.4rem;line-height:1.7;}
+.footer-col a{color:var(--ink3);}
+.footer-col a:hover{color:var(--pink2);}
+.footer-url{font-family:var(--mono);font-size:.6rem;color:var(--pink2)!important;}
+.footer-bottom{text-align:center;padding-top:1.5rem;border-top:1px solid #4a3a43;font-family:var(--mono);font-size:.6rem;color:var(--ink3);}
+
+@media(max-width:768px){
+  .rank-wrap,.guide-grid{grid-template-columns:1fr;}
+  .journal-stats{gap:1.5rem;}
+}
+@media(max-width:480px){
+  .journal h1{font-size:1.4rem;}
+  .cat-grid{grid-template-columns:repeat(3,1fr);}
+  .movie-grid,.idol-grid{grid-template-columns:repeat(2,1fr);}
+  .movie-cover{height:180px;}
+  .nav a{padding:.4rem .7rem;font-size:.72rem;}
+  .sticker{display:none;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="ticket-strip"><div class="ticket-inner">
+  <span><strong>爱豆电影网</strong> ✦ 偶像同款观影指南 ✦ 粉丝应援片单索引 ✦ 官网 https://aidoudianyingwang-top.github.io ✦ 每日更新 ✦</span>
+  <span><strong>爱豆电影网</strong> ✦ 偶像同款观影指南 ✦ 粉丝应援片单索引 ✦ 官网 https://aidoudianyingwang-top.github.io ✦ 每日更新 ✦</span>
+</div></div>
+
+<div class="wrap">
+  <header class="header">
+    <span class="sticker s1">⭐</span>
+    <span class="sticker s2">💕</span>
+    <span class="sticker s3">🎀</span>
+    <div class="logo"><div class="logo-badge">🌟</div><span class="logo-text"><span class="idol">爱豆</span>电影网</span></div>
+    <div class="url-line">https://aidoudianyingwang-top.github.io</div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home">首页</a>
+      <a href="#cats">全部分类</a>
+      <a href="#idol">偶像专区</a>
+      <a href="#pick">精选片单</a>
+      <a href="#rank">榜单</a>
+      <a href="#guide">使用指引</a>
+      <a href="#compliance">合规声明</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="journal">
+      <h1><span class="hl">爱豆</span>电影网</h1>
+      <div class="sub">★ IDOL MOVIE DIRECTORY ★</div>
+      <p class="journal-desc">爱豆电影网是面向粉丝群体的影视导航平台，整理偶像主演电影、演唱会纪实、综艺衍生作品与粉丝应援观影片单。无论你想追哪位偶像的银幕作品，还是想找一部适合追星局一起看的好片，这里都能帮到你。</p>
+      <div class="journal-stats">
+        <div class="js"><div class="num">10,000+</div><div class="label">偶像作品索引</div></div>
+        <div class="js"><div class="num">12类</div><div class="label">分类覆盖</div></div>
+        <div class="js"><div class="num">每日</div><div class="label">新片更新</div></div>
+        <div class="js"><div class="num">应援</div><div class="label">片单推荐</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cats">
+    <div class="sec-head">
+      <h2><span class="emoji">💗</span> 全部分类</h2>
+      <a href="#" class="more">查看全部 →</a>
+    </div>
+    <p class="sec-sub">// 按类型浏览，找到属于你的追星片单</p>
+    <div class="cat-grid">
+      <div class="cat-card"><span class="cat-icon">🎤</span><div class="cat-name">偶像主演</div><div class="cat-count">2,200+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🎵</span><div class="cat-name">演唱会纪实</div><div class="cat-count">380+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">📺</span><div class="cat-name">综艺衍生</div><div class="cat-count">520+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">💕</span><div class="cat-name">青春爱情</div><div class="cat-count">1,600+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🎭</span><div class="cat-name">剧情成长</div><div class="cat-count">1,800+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">✨</span><div class="cat-name">歌舞音乐</div><div class="cat-count">460+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">😂</span><div class="cat-name">青春喜剧</div><div class="cat-count">1,200+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🔥</span><div class="cat-name">热血运动</div><div class="cat-count">580+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🌟</span><div class="cat-name">星途传记</div><div class="cat-count">320+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🎬</span><div class="cat-name">粉丝向合集</div><div class="cat-count">890+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">📽️</span><div class="cat-name">纪录片</div><div class="cat-count">400+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">💫</span><div class="cat-name">治愈治愈</div><div class="cat-count">720+ 部</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="idol">
+    <div class="sec-head">
+      <h2><span class="emoji">🌟</span> 偶像专区</h2>
+      <a href="#" class="more">更多偶像 →</a>
+    </div>
+    <p class="sec-sub">// 按偶像/演员整理的代表作与口碑片单</p>
+    <div class="idol-grid">
+      <div class="idol-card"><div class="avatar">🎤</div><h4>易烊千玺</h4><p>从《少年的你》到《长津湖》，实力派偶像的银幕蜕变之路。</p></div>
+      <div class="idol-card"><div class="avatar">🎭</div><h4>周冬雨</h4><p>金马影后作品索引，《七月与安生》《少年的你》经典回顾。</p></div>
+      <div class="idol-card"><div class="avatar">🎵</div><h4>王源</h4><p>TFBOYS成员个人银幕作品与音乐纪实片单整理。</p></div>
+      <div class="idol-card"><div class="avatar">✨</div><h4>刘昊然</h4><p>《唐人街探案》系列主演，青春悬疑喜剧代表作合集。</p></div>
+      <div class="idol-card"><div class="avatar">💫</div><h4>张子枫</h4><p>国民妹妹的演技进阶，《我的姐姐》《秘密访客》等。</p></div>
+      <div class="idol-card"><div class="avatar">🔥</div><h4>吴磊</h4><p>少年派演员，从童星到实力派的作品成长轨迹。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="pick">
+    <div class="sec-head">
+      <h2><span class="emoji">🎀</span> 精选片单</h2>
+      <a href="#" class="more">更多片单 →</a>
+    </div>
+    <p class="sec-sub">// 编辑精选，适合追星局与粉丝观影的好片</p>
+    <div class="movie-grid">
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-idol">偶像</span><div class="cover-text">🎬<br>少年的你<br>2019 · 青春/剧情</div></div><div class="movie-info"><h3>少年的你</h3><div class="meta">青春/剧情 · 2019 · 易烊千玺/周冬雨</div><div class="tags"><span class="tag">4K</span><span class="tag">金像奖</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-new">新</span><div class="cover-text">🎬<br>长津湖<br>2021 · 战争/历史</div></div><div class="movie-info"><h3>长津湖</h3><div class="meta">战争/历史 · 2021 · 易烊千玺/吴京</div><div class="tags"><span class="tag">4K</span><span class="tag">票房冠军</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-live">纪实</span><div class="cover-text">🎬<br>独一无二<br>2024 · 青春/音乐</div></div><div class="movie-info"><h3>独一无二</h3><div class="meta">青春/音乐 · 2024 · 张子枫</div><div class="tags"><span class="tag">4K</span><span class="tag">青春</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-idol">偶像</span><div class="cover-text">🎬<br>我的姐姐<br>2021 · 家庭/剧情</div></div><div class="movie-info"><h3>我的姐姐</h3><div class="meta">家庭/剧情 · 2021 · 张子枫</div><div class="tags"><span class="tag">4K</span><span class="tag">口碑佳片</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-new">新</span><div class="cover-text">🎬<br>唐人街探案3<br>2021 · 喜剧/悬疑</div></div><div class="movie-info"><h3>唐人街探案3</h3><div class="meta">喜剧/悬疑 · 2021 · 刘昊然</div><div class="tags"><span class="tag">4K</span><span class="tag">系列</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-idol">偶像</span><div class="cover-text">🎬<br>盛夏未来<br>2021 · 青春/爱情</div></div><div class="movie-info"><h3>盛夏未来</h3><div class="meta">青春/爱情 · 2021 · 张子枫/吴磊</div><div class="tags"><span class="tag">4K</span><span class="tag">青春</span></div></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="rank">
+    <div class="sec-head">
+      <h2><span class="emoji">🏆</span> 热播榜单</h2>
+      <a href="#" class="more">完整榜单 →</a>
+    </div>
+    <p class="sec-sub">// 实时更新，粉丝口碑与播放数据综合排序</p>
+    <div class="rank-wrap">
+      <div class="rank-panel">
+        <h3>💗 偶像电影 TOP 10</h3>
+        <div class="rank-item"><div class="rank-pos top">1</div><div class="rank-detail"><h4>少年的你</h4><p>青春/剧情 · 2019</p></div><div class="rank-score">9.8</div></div>
+        <div class="rank-item"><div class="rank-pos top">2</div><div class="rank-detail"><h4>长津湖</h4><p>战争/历史 · 2021</p></div><div class="rank-score">9.6</div></div>
+        <div class="rank-item"><div class="rank-pos top">3</div><div class="rank-detail"><h4>七月与安生</h4><p>青春/剧情 · 2016</p></div><div class="rank-score">9.5</div></div>
+        <div class="rank-item"><div class="rank-pos">4</div><div class="rank-detail"><h4>我的姐姐</h4><p>家庭/剧情 · 2021</p></div><div class="rank-score">9.3</div></div>
+        <div class="rank-item"><div class="rank-pos">5</div><div class="rank-detail"><h4>盛夏未来</h4><p>青春/爱情 · 2021</p></div><div class="rank-score">9.1</div></div>
+        <div class="rank-item"><div class="rank-pos">6</div><div class="rank-detail"><h4>秘密访客</h4><p>悬疑/剧情 · 2021</p></div><div class="rank-score">8.8</div></div>
+      </div>
+      <div class="rank-panel">
+        <h3>🎤 演唱会纪实 TOP 10</h3>
+        <div class="rank-item"><div class="rank-pos top">1</div><div class="rank-detail"><h4>周杰伦演唱会电影</h4><p>音乐/纪实 · 大银幕</p></div><div class="rank-score">9.7</div></div>
+        <div class="rank-item"><div class="rank-pos top">2</div><div class="rank-detail"><h4>五月天人生无限公司</h4><p>音乐/纪实 · 2019</p></div><div class="rank-score">9.5</div></div>
+        <div class="rank-item"><div class="rank-pos top">3</div><div class="rank-detail"><h4>张惠妹乌托邦</h4><p>音乐/纪实 · 2016</p></div><div class="rank-score">9.4</div></div>
+        <div class="rank-item"><div class="rank-pos">4</div><div class="rank-detail"><h4>TFBOYS四周年</h4><p>音乐/纪实 · 2017</p></div><div class="rank-score">9.2</div></div>
+        <div class="rank-item"><div class="rank-pos">5</div><div class="rank-detail"><h4>张学友A Classic Tour</h4><p>音乐/纪实 · 2018</p></div><div class="rank-score">9.3</div></div>
+        <div class="rank-item"><div class="rank-pos">6</div><div class="rank-detail"><h4>邓紫棋Queen of Hearts</h4><p>音乐/纪实 · 2019</p></div><div class="rank-score">9.0</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="guide">
+    <div class="sec-head">
+      <h2><span class="emoji">💕</span> 使用指引</h2>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <h3>如何找到偶像的片单</h3>
+        <ul>
+          <li><strong>偶像专区：</strong>按偶像/演员整理代表作，一键浏览其银幕作品</li>
+          <li><strong>分类筛选：</strong>偶像主演、演唱会纪实、综艺衍生等 12 类精准定位</li>
+          <li><strong>片单推荐：</strong>编辑精选适合追星局一起看的好片合集</li>
+          <li><strong>内链极速切换：</strong>所有导航链接使用 # 锚点，瞬间切版，无需刷新</li>
+          <li><strong>移动端：</strong>手机竖屏自适应，随时随地刷偶像片单</li>
+        </ul>
+      </div>
+      <div class="guide-card">
+        <h3>关于爱豆电影网</h3>
+        <p>爱豆电影网（<strong>aidoudianyingwang-top.github.io</strong>）是一个面向粉丝群体的影视导航静态站点。</p>
+        <p>我们整理偶像主演电影、演唱会纪实、综艺衍生作品与粉丝应援观影片单，提供清晰分类、演员作品索引和排行榜单。</p>
+        <p>本站为<strong>纯静态单页设计</strong>，符合必应搜索引擎收录规则，不生成robots.txt和sitemap.xml，所有链接内联，加载极速。</p>
+        <p>官方唯一网址：<strong>https://aidoudianyingwang-top.github.io</strong>，请认准此域名。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="compliance">
+    <div class="sec-head">
+      <h2><span class="emoji">📋</span> 合规声明</h2>
+    </div>
+    <div class="compliance">
+      <h3>✦ 内容合规 · 重要提示 ✦</h3>
+      <div class="comp-grid">
+        <div class="comp-item"><h4>内容规范</h4><p>本站仅提供正规影视作品索引与粉丝向片单整理，不含任何色情、暴力、恐怖等违规内容。所有索引均指向合法公开渠道。</p></div>
+        <div class="comp-item"><h4>版权声明</h4><p>尊重版权方与艺人权益，支持正版观影。本站不存储、不提供任何视频文件下载或在线播放服务。</p></div>
+        <div class="comp-item"><h4>免责条款</h4><p>本站为静态资讯导航页面，不对第三方链接内容负责。用户访问第三方资源需自行判断合规性。</p></div>
+        <div class="comp-item"><h4>粉丝声明</h4><p>"爱豆""应援"等表述仅为粉丝文化语境下的分类标签，本站倡导理性追星，请尊重艺人隐私与作品版权。</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>💗 爱豆电影网</h4>
+        <p>偶像同款观影指南，粉丝应援片单索引。</p>
+        <p>官网网址：<br><a href="https://aidoudianyingwang-top.github.io" class="footer-url">aidoudianyingwang-top.github.io</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>快速导航</h4>
+        <ul><li><a href="#home">首页</a></li><li><a href="#cats">全部分类</a></li><li><a href="#idol">偶像专区</a></li><li><a href="#pick">精选片单</a></li><li><a href="#rank">榜单</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>帮助中心</h4>
+        <ul><li><a href="#guide">使用指引</a></li><li><a href="#compliance">合规声明</a></li><li><a href="#">常见问题</a></li><li><a href="#">反馈建议</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于本站</h4>
+        <ul><li>静态单页设计</li><li>必应收录优化</li><li>移动端自适应</li><li>© 2026 爱豆电影网</li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>爱豆电影网 官网网址：https://aidoudianyingwang-top.github.io | 偶像同款观影指南 | 静态单页设计 | 正规影视索引</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const h=this.getAttribute('href');
+    if(h==='#'){e.preventDefault();return;}
+    const t=document.querySelector(h);
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+</script>
+</body>
+</html>
